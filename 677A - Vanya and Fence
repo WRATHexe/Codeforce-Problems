@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main(){
+
+int n,h,a,i=0,flag=0;
+cin>>n>>h;
+for(i=0;i<n;i++)
+{
+    cin>>a;
+    if(a<=h)
+        flag++;
+    else
+        flag+=2;
+
+}
+        cout<<flag<<endl;
+
+}
