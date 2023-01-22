@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main(){
+
+int n,a,b;
+cin>>n;
+while(n>0)
+{
+   cin>>a;
+   
+    if(a==1)
+        {
+            b=1;
+            break;
+        }
+n--;
+}
+if(a==1)
+{
+    cout<<"HARD"<<endl;
+}
+else
+    cout<<"EASY"<<endl;
+}
