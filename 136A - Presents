@@ -1,0 +1,19 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main(){
+
+int n,p,q,s=0;
+cin>>n;
+int a[n];
+for(int i=0;i<n;i++)
+{
+   cin>>a[i];
+}
+for(p=1;p<=n;p++)
+    for(q=0;q<n;q++)
+{
+    if(a[q]==p)
+        cout<<q+1<<" ";
+}
+}
