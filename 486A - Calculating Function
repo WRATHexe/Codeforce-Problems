@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+
+long long n,p;
+cin>>n;
+   if(n%2==0)
+   {
+       cout<<n/2<<endl;
+   }
+   else
+   {
+    p=-((n/2)+1);
+    cout<<p<<endl;
+   }
+}
