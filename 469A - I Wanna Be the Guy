@@ -1,0 +1,36 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,p,q,i,a=0;
+    cin>>n;
+    int arr[200];
+
+    cin>>p;
+    for(i=0;i<p;i++)
+    cin>>arr[i];
+
+    cin>>q;
+    for(i=p;i<p+q;i++)
+        cin>>arr[i];
+
+    for(i=0;i<(p+q)-1;i++)
+        for(int j=i+1;j<(p+q);j++)
+        if(arr[i]>arr[j])
+        {
+            int temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+    for(i=0;i<p+q;i++)
+    {
+        if(arr[i]!=arr[i+1])
+        a++;
+    }
+    if(a==n)
+        cout<<"I become the guy."<<endl;
+        else
+        cout<<"Oh, my keyboard!"<<endl;
+}
